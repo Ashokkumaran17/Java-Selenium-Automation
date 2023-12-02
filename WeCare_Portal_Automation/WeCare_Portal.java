@@ -9,9 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-
-
-
 public class WeCare_Portal {
     ChromeDriver driver;
     public void InvokeBrowser(){
@@ -76,7 +73,7 @@ public class WeCare_Portal {
         //Enter the mobile number
         WebElement contactNumber=driver.findElement(By.id("OnDutyHD_laPhoneNo"));
         contactNumber.click();
-        contactNumber.sendKeys("9902628173");
+        contactNumber.sendKeys("<MobileNumber>");
     }
     public void ApplyBtn_click(){
         WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
